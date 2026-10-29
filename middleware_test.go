@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cipl/bugtracking-gopackage"
+	"github.com/cipl-sheik/bugtracking-go"
 )
 
 func TestHTTPMiddlewareReportsPanicAndRepanics(t *testing.T) {

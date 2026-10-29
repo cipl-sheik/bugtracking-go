@@ -14,7 +14,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cipl/bugtracking-gopackage"
+	"github.com/cipl-sheik/bugtracking-go"
 )
 
 var eventIDPattern = regexp.MustCompile(`^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$`)
@@ -148,7 +148,7 @@ func TestCapturePostsIngestContract(t *testing.T) {
 	for _, raw := range frames {
 		frame, _ := raw.(map[string]any)
 		fn, _ := frame["function"].(string)
-		if strings.HasPrefix(fn, "github.com/cipl/bugtracking-gopackage.") {
+		if strings.HasPrefix(fn, "github.com/cipl-sheik/bugtracking-go.") {
 			t.Fatalf("sdk frame leaked: %s", fn)
 		}
 	}

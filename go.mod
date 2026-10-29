@@ -1,3 +1,3 @@
-module github.com/cipl/bugtracking-gopackage
+module github.com/cipl-sheik/bugtracking-go
 
 go 1.22

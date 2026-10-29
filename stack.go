@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-const sdkFramePrefix = "github.com/cipl/bugtracking-gopackage."
+const sdkFramePrefix = "github.com/cipl-sheik/bugtracking-go."
 
 func captureFrames() []frame {
 	var pcs [maxStackFrames + 32]uintptr
